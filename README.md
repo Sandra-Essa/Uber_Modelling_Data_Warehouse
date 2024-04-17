@@ -26,19 +26,18 @@
 ## Modelling
 
 1) Star Schema Design on Draw.io:
-   
    - Utilized Draw.io for visualizing the star schema design.
    - Designed dimensions including Dim_DataTime, Dim_Passenger_Count, Dim_Trip_Distance, Dim_Rate_Code, Dim_Payment_Type, Dim_Dropoff_Location, and Dim_Pickup_Location.
    - Created a fact table named Fact_Table_Merged representing Uber trip data.
    - Creating Dimensions in Python DataFrame
 
-3) Implemented dimensions in Python using pandas DataFrame:
-  - Each dimension contains unique identifiers and relevant attributes for analysis.
-  - Ensured data consistency and integrity within each dimension.
+2) Implemented dimensions in Python using pandas DataFrame:
+   - Each dimension contains unique identifiers and relevant attributes for analysis.
+   - Ensured data consistency and integrity within each dimension.
 
 3) Creating Fact Table:
-  - Constructed a fact table named Fact_Table_Merged by merging relevant dimensions with Uber trip data.
-  - Ensured referential integrity by linking foreign keys from dimensions to the fact table.
+   - Constructed a fact table named Fact_Table_Merged by merging relevant dimensions with Uber trip data.
+   - Ensured referential integrity by linking foreign keys from dimensions to the fact table.
 
 ## Data_Transfer_Process
 
@@ -46,8 +45,8 @@
    - Imported Uber trip data from a CSV file into pandas DataFrame.
 
 2) Data Modeling and Transformation:
-  - Modeled the data into dimensions and fact table using Python pandas.
-  - Renamed columns, handled data types, and ensured data quality.
+   - Modeled the data into dimensions and fact table using Python pandas.
+   - Renamed columns, handled data types, and ensured data quality.
 
 3) Data Loading into MS SQL Server:
    - Established a connection to the MS SQL Server using Windows authentication.
