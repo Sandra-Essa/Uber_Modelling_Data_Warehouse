@@ -19,19 +19,20 @@
 - The TLC Trip Record Data encompasses trip details for both yellow and green taxis, containing essential fields such as pick-up and drop-off timestamps, locations, travel distances, fare breakdowns, rate categories, payment methods, and passenger counts reported by drivers.
 
 - More info about dataset can be found here:
-   - https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page
-   - https://www.nyc.gov/assets/tlc/downloads/pdf/data_dictionary_trip_records_yellow.pdf
+     - https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page
+     - https://www.nyc.gov/assets/tlc/downloads/pdf/data_dictionary_trip_records_yellow.pdf
 
 
 ## Modelling
 
 1) Star Schema Design on Draw.io:
+   
    - Utilized Draw.io for visualizing the star schema design.
    - Designed dimensions including Dim_DataTime, Dim_Passenger_Count, Dim_Trip_Distance, Dim_Rate_Code, Dim_Payment_Type, Dim_Dropoff_Location, and Dim_Pickup_Location.
    - Created a fact table named Fact_Table_Merged representing Uber trip data.
-   - Creating Dimensions in Python DataFrame:
+   - Creating Dimensions in Python DataFrame
 
-2) Implemented dimensions in Python using pandas DataFrame:
+3) Implemented dimensions in Python using pandas DataFrame:
   - Each dimension contains unique identifiers and relevant attributes for analysis.
   - Ensured data consistency and integrity within each dimension.
 
