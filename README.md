@@ -31,7 +31,7 @@
    - Created a fact table named Fact_Table_Merged representing Uber trip data.
    - Creating Dimensions in Python DataFrame:
 
-2) Implemented dimensions in Python using pandas DataFrame.
+2) Implemented dimensions in Python using pandas DataFrame:
   - Each dimension contains unique identifiers and relevant attributes for analysis.
   - Ensured data consistency and integrity within each dimension.
 
