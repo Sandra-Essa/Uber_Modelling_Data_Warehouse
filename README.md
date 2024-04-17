@@ -3,9 +3,9 @@
 - [Description](#description)
 - [Dataset](#Dataset)
 - [Modelling](#Modelling)
-- [Data Transfer Process](#Data_Transfer_Process)
-- [DWH Design](#DWH_Design)
-   - [Star Schema](#Star_Schema)
+- [Data Transfer Process](#Data-Transfer-Process)
+- [DWH Design](#DWH-Design)
+   - [Star Schema](#Star-Schema)
    - [Diagram](#Diagram)
 - [Tools](#Tools)
 
@@ -39,7 +39,7 @@
    - Constructed a fact table named Fact_Table_Merged by merging relevant dimensions with Uber trip data.
    - Ensured referential integrity by linking foreign keys from dimensions to the fact table.
 
-## Data_Transfer_Process
+## Data Transfer Process
 
 1) Data Extraction:
    - Imported Uber trip data from a CSV file into pandas DataFrame.
@@ -53,7 +53,7 @@
    - Created tables for dimensions and the fact table in the Data Warehouse.
    - Transferred the modeled data from pandas DataFrames to MS SQL Server using SQLAlchemy's create_engine function.
 
-## DWH_Design
+## DWH Design
 
 ### Star Schema
 ![Demo Sample](https://github.com/Sandra-Essa/Uber_Modelling_Data_Warehouse/blob/main/Media/Modelling%20Schema.drawio.png)
